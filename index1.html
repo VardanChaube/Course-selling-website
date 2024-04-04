@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website praticse</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" id="logo">
+
+            <h1>The purpose is to<br>teach, bring learning to people</h1>
+            <span class="square"></span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Fuga natus quae hic deserunt aut officiis 
+            blanditiis beatae! Maiores, doloribus reiciendis, 
+            voluptatum numquam ipsum illo itaque doloremque, omnis 
+            provident ab eveniet.</p>
+            <button class="Btn">Read More</button>
+        </div>
+    </section>
+    <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+    </div>
+    <nav id="sideNav">
+        <ul>
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">ABOUT US</a>
+            </li>
+            <li>
+                <a href="#">FEATURES</a>
+            </li>
+            <li>
+                <a href="#">COURSES</a>
+            </li>
+            <li>
+                <a href="#">OFFER</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right='-250px';
+        menuBtn.onclick=function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+        }
+        else{
+            sideNav.style.right="-250px"
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
